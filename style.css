@@ -1,0 +1,46 @@
+.container{
+    width: 200px;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dice-wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    background-color: #75C2F6;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 150px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shake{
+    animation: shake 0.5s infinite;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(70deg);
+    }
+    50%{
+        transform: rotate(-70deg);
+    }
+    100%{
+        transform: rotate(70deg);
+    }
+}
